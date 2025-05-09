@@ -5,7 +5,8 @@ This project contains automated tests for two different challenges:
 1. **UI Automation** for [Demoblaze](https://www.demoblaze.com) using Playwright.
 2. **API Testing** for [Swagger Petstore](https://petstore.swagger.io) using Playwright's built-in API features.
 
-💡 Technologies Used
+💡 **Technologies Used**
+
 Playwright
 
 TypeScript
@@ -31,7 +32,7 @@ npx playwright install
 
 npx playwright test --project=UI
 
-RUN with ui interface:
+RUN with UI interface:
 
 npx playwright test --ui
 
