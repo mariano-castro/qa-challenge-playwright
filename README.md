@@ -1,11 +1,3 @@
-Run with ui interface:
-
-npx playwright test --ui
-
-Run in headless mode:
-
-npx playwright test tests/ui/scrape-products.spec.ts
-
 # 🧪 QA Automation Challenge - UI & API (Playwright)
 
 This project contains automated tests for two different challenges:
@@ -20,29 +12,29 @@ TypeScript
 
 Node.js
 
-### 📦 1. Clone the repository
-
 ```bash
+ 📦 1. Clone the repository
+
 git clone https://github.com/your-username/qa-automation-challenge.git
 cd qa-automation-challenge
 
-### 📥 2. Install dependencies
+ 📥 2. Install dependencies
 
 npm install
 
-### 🛠️ 3. Install Playwright browsers
+ 🛠️ 3. Install Playwright browsers
 
 npx playwright install
 
-### 🧪 Running the Tests
-### UI Test 1: Scrape products (first 2 pages)
+ 🧪 4. Running the Tests (UI)
+ UI Test 1: Scrape products (first 2 pages)
 
-npx playwright test tests/ui/scrape-products.spec.ts
+npx playwright test --project=UI
 
-### UI Test 2: Purchase a product
-
-npx playwright test tests/ui/purchase-product.spec.ts
-
-### Run with ui interface:
+RUN with ui interface:
 
 npx playwright test --ui
+
+🧪 5. Running the Tests (API)
+
+npx playwright test --project=API

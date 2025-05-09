@@ -54,7 +54,6 @@ export class DemoblazePage {
 
   async addToCart() {
     await this.page.locator('a.btn.btn-success.btn-lg').click();
-    // Se espera al alert en el test (con page.once)
   }
 
   async goToCart() {
@@ -62,7 +61,7 @@ export class DemoblazePage {
   }
 
   async placeOrder(name: string, cardNumber: string) {
-    await this.page.locator('button.btn.btn-success').click(); // "Place Order" button
+    await this.page.locator('button.btn.btn-success').click(); 
 
     await this.page.fill('#name', name);
     await this.page.fill('#card', cardNumber);
